@@ -1,4 +1,3 @@
-
 document.getElementById("form1").addEventListener("submit",function(e){
 	e.preventDefault(); //Evita el envío del formulario hasta comprobar
 	
@@ -29,7 +28,7 @@ document.getElementById("form1").addEventListener("submit",function(e){
 	for( i in planetas){
 		var masaPlaneta = planetas[i] * masa;
 		planeta = i.charAt(0).toUpperCase() + i.slice(1);
-		text += "Tu peso en " + planeta + " es de: " + masaPlaneta + "\n";
+		text += "Tu peso en " + planeta + " es de: " + masaPlaneta.toFixed(2) + "Kg \n";
 	}
 	alert("Hola " + nombre + "\n" + text);
 
